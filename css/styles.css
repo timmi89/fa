@@ -1,7 +1,146 @@
+html {
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #CCC;
+  font-size: 16px;
+  font-family: 'Tillana';
+}
+
+.wrap {
+  width: 85%;
+  margin: 0 auto;
+  background: #c9c;
+  position: relative;
+  min-height: 100%;
+}
+
+.header {
+  padding:5px 10px;
+  background:#ddd;
+
+}
+.nav {
+  padding:5px 10px;
+  background:#c99;
+  text-decoration: none;
+}
+.main1 {
+  float: left;
+  width: 60%;
+  padding: 2%;
+  background:#9c9;
+  margin: 0;
+}
+.main2 {
+  float: right;
+  width: 40%;
+  padding: 2%;
+  background: #c9c;
+}
+
+.footer {
+  clear: both;
+  padding: 5px 10px;
+  background: #cc9;
+}
+
+.nav ul {
+  margin: 10px;
+  padding: 10px;
+
+}
+.nav li {
+  display: inline;
+  margin: 10px;
+  padding: 10px;
+  border: 2px dotted black;
+  background-color: darkred;
+  border-radius: 10px;
+
+}
+.nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav li:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+.cf:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+
+img {
+  width: 35%;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 882px){
+  .main2 {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .main1 {
+    width: 100%;
+  }
+  .nav li {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+}
+@media only screen and (max-width: 1924px) {
+
+  .main2 {
+    float: right;
+    width: 40%;
+    height: 100%;
+  }
+  .main1 {
+    float: left;
+    width: 60%;
+  }
+}
+
+
+@media only screen and (min-width: 1925px) {
+  .main1 {
+  height: 765px;
+  }
+  .main2 {
+  height: 765px;
+  }
+
+  img {
+    max-width: 25%;
+  }
+  .nav li {
+    font-size: 16px;
+  }
 }
