@@ -2,6 +2,10 @@ html {
   height: 100%;
 }
 
+body {
+  min-height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -20,12 +24,13 @@ body, html {
   font-family: 'Tillana';
 }
 
+/*THIS IS A COP OUT FIX*/
+
 .wrap {
   width: 85%;
   margin: 0 auto;
   background: #c9c;
   position: relative;
-  min-height: 100%;
 }
 
 .header {
@@ -44,12 +49,16 @@ body, html {
   padding: 2%;
   background:#9c9;
   margin: 0;
+  height: 100%;
+
 }
 .main2 {
   float: right;
   width: 40%;
   padding: 2%;
+  min-height: 100%;
   background: #c9c;
+
 }
 
 .footer {
@@ -92,6 +101,11 @@ body, html {
 	height: 0;
 	}
 
+.wrap2 {
+  height: 100%;
+
+}
+
 img {
   width: 35%;
   border-radius: 20px;
@@ -118,9 +132,10 @@ img {
 @media only screen and (max-width: 1924px) {
 
   .main2 {
-    float: right;
+    float: left;
     width: 40%;
     height: 100%;
+    mar
   }
   .main1 {
     float: left;
